@@ -1,0 +1,49 @@
+<%- include('layout/header.ejs') %>
+<div class="container">
+  <div class="row">
+    <form class="form-horizontal" method="post" role="form">
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-1 control-label">标题：</label>
+        <div class="col-sm-5">
+          <input
+            type="text"
+            name="title"
+            value=""
+            class="form-control"
+            placeholder="标题"
+          />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-1 control-label">作者：</label>
+        <div class="col-sm-5">
+          <input
+            type="text"
+            name="author"
+            value=""
+            class="form-control"
+            placeholder="作者"
+          />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-1 control-label">价格：</label>
+        <div class="col-sm-5">
+          <input
+            type="number"
+            name="price"
+            value=""
+            class="form-control"
+            placeholder="价格"
+          />
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-5 col-sm-offset-1">
+          <input type="submit" class="btn btn-primary" value="提交" />
+          <input type="reset" class="btn btn-default" value="重置" />
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

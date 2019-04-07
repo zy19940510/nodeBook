@@ -1,0 +1,46 @@
+<%- include('layout/header.ejs') %>
+  <div class="container">
+    <!-- 增加 -->
+    <div class="row" style="margin-bottom: 20px">
+      <a href="add" type="button" class="btn btn-primary">添加图书</a>
+    </div>
+    <div class="row">
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+          <!-- 表格标题 -->
+          <thead>
+            <tr>
+              <th>标题</th>
+              <th>作者</th>
+              <th>价格</th>
+              <th>时间</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <!-- 数据列表 -->
+          <tbody>
+            <% books.forEach(function(book){ %>
+            <tr>
+              <td>
+                <%= book.title %>
+              </td>
+              <td>
+                <%= book.author %>
+              </td>
+              <td>
+                <%= book.price %>
+              </td>
+              <td>
+                <%= formatTime(book.createTime) %>
+              </td>
+              <td>
+                <a href="delete?id=<%= book.id %>">删除</a> |
+                <a href="update?id=<%= book.id %>">修改</a>
+              </td>
+            </tr>
+            <% }); %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>

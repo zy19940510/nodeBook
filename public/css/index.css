@@ -1,0 +1,13 @@
+header {
+  background-color: #d26262;
+  line-height: 45px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+header a {
+  color: #fff;
+}
