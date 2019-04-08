@@ -1,0 +1,81 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2019-04-08T03:04:25.276Z",
+    "end": "2019-04-08T03:04:25.282Z",
+    "duration": 6,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "danger",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "5d09e47b-8037-4791-b4d5-880893f6b103",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "0392867d-c666-404f-aea2-e3809b24a5d4",
+        "title": "Node接口测试",
+        "fullFile": "/Users/zy/Desktop/nodeBook/tests/service/router.spec.js",
+        "file": "/tests/service/router.spec.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "test接口测试",
+            "fullTitle": "Node接口测试 test接口测试",
+            "timedOut": false,
+            "duration": 1,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "fetch('http://localhost:8000/', function(res) {\n  if (res.body.data == 'Hello 京程一灯') {\n    done()\n  } else {\n    console.log(res.body)\n    done(new Error('接口数据异常'))\n  }\n})",
+            "err": {
+              "message": "ReferenceError: fetch is not defined",
+              "estack": "ReferenceError: fetch is not defined\n    at Context.<anonymous> (tests/service/router.spec.js:3:5)\n    at callFnAsync (node_modules/_mocha@6.1.1@mocha/lib/runnable.js:415:21)\n    at Test.Runnable.run (node_modules/_mocha@6.1.1@mocha/lib/runnable.js:357:7)\n    at Runner.runTest (node_modules/_mocha@6.1.1@mocha/lib/runner.js:535:10)\n    at /Users/zy/Desktop/nodeBook/node_modules/_mocha@6.1.1@mocha/lib/runner.js:653:12\n    at next (node_modules/_mocha@6.1.1@mocha/lib/runner.js:447:14)\n    at /Users/zy/Desktop/nodeBook/node_modules/_mocha@6.1.1@mocha/lib/runner.js:457:7\n    at next (node_modules/_mocha@6.1.1@mocha/lib/runner.js:362:14)\n    at Immediate._onImmediate (node_modules/_mocha@6.1.1@mocha/lib/runner.js:425:5)"
+            },
+            "isRoot": false,
+            "uuid": "92041bb4-59d0-47f1-a410-68911075109d",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [],
+        "failures": [
+          "92041bb4-59d0-47f1-a410-68911075109d"
+        ],
+        "pending": [],
+        "skipped": [],
+        "duration": 1,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2019
+}
